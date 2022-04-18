@@ -20,7 +20,7 @@ public class ConnectionProvider {
         try 
         {
             Class.forName("oracle.jdbc.driver.OracleDriver");
-            Connection con = DriverManager.getConnection("jdbc:oracle:thin:@LAPTOP-NBOM5BSG:1522:XE","system","madhavi8");
+            Connection con = DriverManager.getConnection("url","user_name","password");
             return con;
         }
         catch(ClassNotFoundException | SQLException e)
